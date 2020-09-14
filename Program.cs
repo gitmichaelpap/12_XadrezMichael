@@ -1,5 +1,5 @@
-﻿using System;
-using tabuleiro;
+﻿using _12_XadrezMichael.tabuleiro;
+using System;
 
 namespace _12_XadrezMichael
 {
@@ -8,11 +8,7 @@ namespace _12_XadrezMichael
         static void Main(string[] args)
         {
 
-            Posicao P;
-
-            P = new Posicao(3, 4);
-
-            Console.WriteLine("Posição: " + P);
+            Tabuleiro tab = new Tabuleiro(8, 8);
 
             Console.ReadLine();
         }
