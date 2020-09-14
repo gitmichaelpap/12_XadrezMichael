@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _12_XadrezMichael.tabuleiro
+﻿namespace _12_XadrezMichael.tabuleiro
 {
     class Tabuleiro
     {
@@ -17,5 +13,11 @@ namespace _12_XadrezMichael.tabuleiro
             this.colunas = colunas;
             pecas = new Peca[linhas,colunas];
         }
+
+        public Peca peca(int linha, int coluna)
+        {
+            return pecas[linha, coluna];
+        }
+
     }
 }
