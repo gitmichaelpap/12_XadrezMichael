@@ -1,5 +1,5 @@
 ﻿
-namespace _12_XadrezMichael.tabuleiro
+namespace tabuleiro
 {
     enum Cor
     {

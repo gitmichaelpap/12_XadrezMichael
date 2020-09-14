@@ -1,5 +1,6 @@
-﻿using _12_XadrezMichael.tabuleiro;
-using System;
+﻿using System;
+using tabuleiro;
+
 namespace _12_XadrezMichael
 {
     class Tela
