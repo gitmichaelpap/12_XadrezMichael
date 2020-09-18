@@ -5,14 +5,14 @@ namespace tabuleiro
     class Tabuleiro
     {
 
-        public int Linhas { get; set; }
-        public int Colunas { get; set; }
+        public int linhas { get; set; }
+        public int colunas { get; set; }
         private Peca[,] pecas;
 
         public Tabuleiro(int linhas, int colunas)
         {
-            Linhas = linhas;
-            Colunas = colunas;
+            this.linhas = linhas;
+            this.colunas = colunas;
             pecas = new Peca[linhas, colunas];
         }
 
@@ -56,7 +56,7 @@ namespace tabuleiro
 
         public bool posicaoValida(Posicao pos)
         {
-            if (pos.linha < 0 || pos.linha >= Linhas || pos.coluna < 0 || pos.coluna >= Colunas)
+            if (pos.linha < 0 || pos.linha >= linhas || pos.coluna < 0 || pos.coluna >= colunas)
             {
                 return false;
             }
