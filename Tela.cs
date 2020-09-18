@@ -16,6 +16,11 @@ namespace _12_XadrezMichael
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
             Console.WriteLine("Aguardando a jogada: " + partida.jogadorAtual);
+            if (partida.xeque)
+            {
+                Console.WriteLine("XEQUE!");
+
+            }
         }
 
         public static void imprimirPecasCapturadas(PartidaDeXadrez partida)
@@ -23,12 +28,12 @@ namespace _12_XadrezMichael
             Console.WriteLine();
             Console.WriteLine("Peças capturadas: ");
             Console.Write("Brancas: ");
-            imprimirConjunto(partida.pecasCapituradas(Cor.Branca));
+            imprimirConjunto(partida.pecasCapturadas(Cor.Branca));
             Console.WriteLine();
             Console.Write("Pretas: ");
             ConsoleColor aux = Console.ForegroundColor;
             Console.ForegroundColor = ConsoleColor.Yellow;
-            imprimirConjunto(partida.pecasCapituradas(Cor.Preta));
+            imprimirConjunto(partida.pecasCapturadas(Cor.Preta));
             Console.ForegroundColor = aux;
             Console.WriteLine();
 
